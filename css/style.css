@@ -17,6 +17,9 @@ a{
 	font-size: 1.3rem;
 	margin: 0.5rem 0;
 }
+.socials ul li a{
+	margin: 0 0.5rem;
+}
 .icons:before{
 	display:inline-block;
 	font:normal normal normal 14px/1 'Font Awesome 5 Brands';
