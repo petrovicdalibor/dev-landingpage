@@ -1,13 +1,42 @@
 body{
+	background: #94618e;
 	font-family: 'Roboto', sans-serif;
-	color: #0074D9;
+	color: #f8eee7;
 }
 a{
-	color: #0074D9;
+	color: #f8eee7;
+	font-family: 'Roboto', sans-serif;
+	text-decoration: none;
 }
-.socials i {
-	font-size: 3em;
-	padding: 10px;
+.socials {
+	text-transform: uppercase;
+	font-size: 1.2em;
+}
+.socials ul li {
+	display: inline-block;
+	font-size: 1.3rem;
+	margin: 0.5rem 0;
+}
+.icons:before{
+	display:inline-block;
+	font:normal normal normal 14px/1 'Font Awesome 5 Brands';
+	font-size:inherit;
+	text-rendering:auto;
+	-webkit-font-smoothing:antialiased;
+	-moz-osx-font-smoothing:grayscale;
+	-webkit-transform:translate(0, 0);
+	transform:translate(0, 0);
+	padding-right:0.3rem;
+	vertical-align:center;
+	text-transform: uppercase;
+}
+.github:before{
+	content:'\f09b';
+	font-family: 'Font Awesome 5 Brands';
+}
+.codepen:before{
+	content: '\f1cb';
+	font-family: 'Font Awesome 5 Brands';
 }
 main{
 	display: flex;
