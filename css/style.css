@@ -1,0 +1,31 @@
+body{
+	font-family: 'Roboto', sans-serif;
+	color: #0074D9;
+}
+a{
+	color: #0074D9;
+}
+.socials i {
+	font-size: 3em;
+	padding: 10px;
+}
+main{
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	justify-content: center;
+	text-align: center;
+	padding: 0 30px;
+}
+main > h1{
+	font-family: 'Reem Kufi', sans-serif;
+	font-size: 3.75em;
+	font-weight: 600;
+}
+
+main > p{
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.5em;
+	margin: 1.5rem 0;
+	font-weight: 100;
+}
