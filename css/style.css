@@ -1,5 +1,5 @@
 body{
-	background: #94618e;
+	background: #a63b3b;
 	font-family: 'Roboto', sans-serif;
 	color: #f8eee7;
 }
@@ -41,6 +41,10 @@ a{
 	content: '\f1cb';
 	font-family: 'Font Awesome 5 Brands';
 }
+.stackoverflow:before{
+	content: '\f16c';
+	font-family: 'Font Awesome 5 Brands';
+}
 main{
 	display: flex;
 	flex-direction: column;
@@ -60,4 +64,7 @@ main > p{
 	font-size: 1.5em;
 	margin: 1.5rem 0;
 	font-weight: 100;
+}
+main a:hover{
+	text-decoration: underline;
 }
