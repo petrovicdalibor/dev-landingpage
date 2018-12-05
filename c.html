@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Problem Sets | Code</title>
+</head>
+<body>
+    <h1>Suma na matrica</h1>
+    <p>
+        #include <br>
+
+        int main()<br>
+        {<br>
+            int m, n, i, j, sum = 0;<br>
+            scanf("%d %d", &m, &n);<br>
+            int a[m][n];<br>
+        
+            for(i = 0; i < m; i++)<br>
+            {<br>
+                for(j = 0; j < n; j++)<br>
+                {<br>
+                    scanf("%d", &a[i][j]);<br>
+                    sum = sum + a[i][j];<br>
+                }<br>
+            }<br>
+            printf("sum = %d", sum);<br>
+            return 0;<br>
+        }<br>
+    </p><br>
+    <br>
+    <h1>Prag</h1>
+    <p>
+            #include <br>
+            
+            int main()<br>
+            {<br>
+                int m, n, i, j, x, sum, r;<br>
+                scanf("%d", &x);<br>
+                scanf("%d %d", &m, &n);<br>
+                int a[m][n], b[m][n];<br>
+                for(i = 0; i < m; i++)<br>
+                {<br>
+                    for(j = 0; j < n; j++)<br>
+                    {<br>
+                        scanf("%d", &a[i][j]);<br>
+                    }<br>
+                }<br>
+                for(i = 0; i < n; i++)<br>
+                {<br>
+                    sum = 0;<br>
+                    for(j = 0; j < m; j++)<br>
+                    {<br>
+                        sum = sum + a[j][i];<br>
+                    }<br>
+                    if(sum > x)<br>
+                    {<br>
+                        r = 1;<br>
+                        for(j = 0; j < m; j++)<br>
+                        {<br>
+                            a[j][i] = r;<br>
+                        }<br>
+                    }<br>
+                    if(sum < x)<br>
+                    {<br>
+                        r = -1;<br>
+                        for(j = 0; j < m; j++)<br>
+                        {<br>
+                            a[j][i] = r;<br>
+                        }<br>
+                    }<br>
+                    if(sum == x)<br>
+                    {<br>
+                        r = 0;<br>
+                        for(j = 0; j < m; j++)<br>
+                        {<br>
+                            a[j][i] = r;<br>
+                        }<br>
+                    }<br>
+                }<br>
+                for(i = 0; i < m; i++)<br>
+                {<br>
+                    for(j = 0; j < n; j++)<br>
+                    {<br>
+                        printf("%d ", a[i][j]);<br>
+                    }<br>
+                    printf("\n");<br>
+                }<br>
+                return 0;<br>
+            }<br>
+            
+
+    </p>
+
+    <br>
+
+    <h1>Transformacija na matrica</h1>
+
+    <p>
+
+            
+
+            #include
+            
+            int main()<br>
+            {<br>
+                int m, n, i, j, max, min;<br>
+                scanf("%d", &n);<br>
+                int a[n][n];<br>
+                for(i = 0; i < n; i++)<br>
+                {<br>
+                    for(j = 0; j < n; j++)<br>
+                    {<br>
+                        scanf("%d", &a[i][j]);<br>
+                    }<br>
+                }<br>
+                max = -1;<br>
+                min = 100;<br>
+                for(i = 0; i < n; i++)<br>
+                {<br>
+                    for(j = 0; j < n; j++)<br>
+                    {<br>
+                        if(i != j)<br>
+                        {<br>
+                            if(j > i)<br>
+                            {<br>
+                                if(a[i][j] > max)<br>
+                                {<br>
+                                    max = a[i][j];<br>
+                                }<br>
+                            }<br>
+                            if(i > j)<br>
+                            {<br>
+                                if(a[i][j] < min)<br>
+                                {<br>
+                                    min = a[i][j];<br>
+                                }<br>
+                            }<br>
+                        }<br>
+                    }<br>
+                }<br>
+                for(i = 0; i < n; i++)<br>
+                {<br>
+                    for(j = 0; j < n; j++)<br>
+                    {<br>
+                        if(i != j)<br>
+                        {<br>
+                            if(j > i)<br>
+                            {<br>
+                                a[i][j] = max;<br>
+                            }<br>
+                            if(i > j)<br>
+                            {<br>
+                                a[i][j] = min;<br>
+                            }<br>
+                        }<br>
+                    }<br>
+                }<br>
+                for(i = 0; i < n; i++)<br>
+                {<br>
+                    for(j = 0; j < n; j++)<br>
+                    {<br>
+                        printf("%d ", a[i][j]);<br>
+                    }<br>
+                    printf("\n");<br>
+                }<br>
+                return 0;<br>
+            }<br>
+            
+
+    </p>
+
+    <br>
+    <h1>Dlapki vo matrica</h1>
+    
+    <p>
+
+            
+
+            #include <br>
+            
+            int main()<br>
+            {<br>
+                int m, n, i, j;<br>
+                scanf("%d %d", &m, &n);<br>
+                int a[m][n];<br>
+                for(i = 0; i < m; i++)<br>
+                {<br>
+                    for(j = 0; j < n; j++)<br></n>
+                    {<br>
+                        scanf("%d", &a[i][j]);<br>
+                    }<br>
+                }<br>
+                for(i = 0; i < m; i++)<br></m>
+                {<br>
+                    for(j = 0; j < n; j++)<br></n>
+                    {<br>
+                        if(i == 0)<br>
+                        {<br>
+                            if(j == 0)<br>
+                            {<br>
+                                if(a[i][j] < a[i][j+1] && a[i][j] < a[i+1][j])<br></a>
+                                {<br>
+                                    printf("%d ", a[i][j]);<br>
+                                }<br>
+                            }<br>
+                            if(j == n-1)<br>
+                            {<br>
+                                if(a[i][j] < a[i][j-1] && a[i][j] < a[i+1][j])<br></a>
+                                {<br>
+                                    printf("%d ", a[i][j]);<br>
+                                }<br>
+                            }<br>
+                            if(j != 0 && j != n-1)<br>
+                            {<br>
+                                if(a[i][j] < a[i][j-1] && a[i][j] < a[i][j+1] && a[i][j] < a[i+1][j])<br></a>
+                                {<br>
+                                    printf("%d ", a[i][j]);<br>
+                                }<br>
+                            }<br>
+                        }<br>
+                        if(j == 0)<br>
+                        {<br>
+                            if(i == m-1)<br>
+                            {<br>
+                                if(a[i][j] < a[i-1][j] && a[i][j] < a[i][j+1])<br>
+                                {<br>
+                                    printf("%d ", a[i][j]);<br>
+                                }<br>
+                            }<br>
+                            if(i != 0 && i != m-1)<br>
+                            {<br>
+                                if(a[i][j] < a[i-1][j] && a[i][j] < a[i+1][j] && a[i][j] < a[i][j+1])<br>
+                                {<br>
+                                    printf("%d ", a[i][j]);<br>
+                                }<br>
+                            }<br>
+                        }<br>
+                        if(i == m-1)<br>
+                        {<br>
+                            if(j == n-1)<br>
+                            {<br>
+                                if(a[i][j] < a[i][j-1] && a[i][j] < a[i-1][j])<br>
+                                {<br>
+                                    printf("%d ", a[i][j]);<br>
+                                }<br>
+                            }<br>
+                            if(j != 0 && j != n-1)<br>
+                            {<br>
+                                if(a[i][j] < a[i][j-1] && a[i][j] < a[i-1][j] && a[i][j] < a[i][j+1])<br>
+                                {<br>
+                                    printf("%d ", a[i][j]);<br>
+                                }<br>
+                            }<br>
+                        }<br>
+                        if(j == n-1)<br>
+                        {<br>
+                            if(i != 0 && j != m-1)<br>
+                            {<br>
+                                if(a[i][j] < a[i-1][j] && a[i][j] < a[i][j-1] && a[i][j] < a[i+1][j])<br>
+                                {<br>
+                                    printf("%d ", a[i][j]);<br>
+                                }<br>
+                            }<br>
+                        }<br>
+                        if(i != 0 && j != 0 && i != m-1 && j != n-1)<br>
+                        {<br>
+                            if(a[i][j] < a[i][j-1] && a[i][j] < a[i-1][j] && a[i][j] < a[i][j+1] && a[i][j] < a[i+1][j])<br>
+                                {<br>
+                                    printf("%d ", a[i][j]);<br>
+                                }<br>
+                        }<br>
+                    }<br>
+                }<br>
+                return 0;<br>
+            }<br>
+            
+
+    </p>
+
+</body>
+</html>
