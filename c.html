@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Problem Sets | Code</title>
+</head>
+<body>
+    
+    <h1>Proizvod na cifri</h1><br>
+
+    <p>#include<br>
+        int proizvod (int broj)<br>
+        {<br>
+            int i=1,pro=1,parcifra=1;<br>
+         
+            while(broj!=0)<br>
+            {<br>
+                pro=broj%10;<br>
+                broj=broj/10;<br>
+                if(i%2==0)<br>
+                {<br>
+                    parcifra=parcifra*pro;<br>
+                }<br>
+                i++;<br>
+            }<br>
+            return parcifra;<br>
+        }<br>
+         
+        int main()<br>
+        {<br>
+            int n;<br>
+         
+            printf("Broj= ");<br>
+            scanf("%d",&n);<br>
+            printf("Proizvodot na parnite cifri e %d",proizvod(n));<br>
+         
+            return 0;<br>
+        }<br></p>
+
+        <br>
+
+
+        <h1>Palindromi</h1><br>
+
+        <p>
+
+            #include<br>
+                int obraten(n){<br>
+                if(n/10==0){<br>
+                    return 0;<br>
+                }<br>
+                else{<br>
+                    return n*10+obraten(n/10);<br>
+                }<br>
+                }<br>
+            int main(){<br>
+                int n;<br>
+                    while(scanf("%d",&n)){<br>
+                        int tmp=n+obraten(n);<br>
+                        int pom=tmp;<br>
+                        int reverse=0;<br>
+                            while(pom!=0){<br>
+                                reverse*=10;<br>
+                                reverse+=pom%10;<br>
+                                pom/=10;<br>
+                            }<br>
+                           int obr=reverse;<br>
+                            reverse=0;<br>
+             
+                                if(tmp==obr){<br>
+                                    printf("Palindrom e: %d",n);<br>
+                                }<br>
+                    }<br>
+             
+             
+            return 0;<br>
+            }<br>
+            
+            
+
+        </p><br>
+
+        <h1>Suma od sumi</h1>
+
+        <p><br>
+            #include <br>
+                int suma(int a[], int i){<br>
+                    if(!i) return a[0];<br>
+                    else return a[i]+suma(a,i-1);<br>
+                }<br>
+                 
+                 
+                int main() {<br>
+                    int n,i,j,s=0;<br>
+                    scanf("%d",&n);<br>
+                    int a[n],b[n];<br>
+                    for(i=0;i<n;i++)<br>
+                    {<br>
+                        scanf("%d",&a[i]);<br>
+                        if(a[i]<0)<br>
+                                        a[i]=0;<br>            
+                    }<br>
+                   
+                    b[0]=0;<br>
+                    for(i=1;i<n;i++)<br>
+                    {<br>
+                        s=0;<br>
+                        for(j=1;j<=i;j++)<br>
+                          s+=suma(a,j-1);<br>
+                        b[i]=s;<br>
+                    }<br>
+                   
+                    for(i=0;i<n;i++)<br>
+                        printf("%d\n",b[i]);<br>
+                   
+                    return 0;<br>
+                }<br>
+
+
+
+
+        </p>
+
+
+        <h1>NZS</h1>
+
+        <p>
+<br>
+            int main()<br>
+{<br>
+    int a,b,i;<br>
+    scanf("%d%d",&a,&b);<br>
+    int maks;<br>
+    maks=a*b;<br>
+    for(i=1;i<=maks;i++){<br>
+        if(maks%i==0 && i%a==0 && i%b==0){<br>
+            printf("%d",i);<br>
+            break;<br>
+ 
+        }<br>
+    }<br>
+    return 0;<br>
+}<br>
+
+        </p>
+</body>
+</html>
